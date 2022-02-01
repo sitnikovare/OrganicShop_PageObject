@@ -31,74 +31,75 @@ public class MainPageTests {
     @Test
     public void getCatalogListTest() {
         mainPage.getCatalogList();
-        Assert.assertEquals(driver.getCurrentUrl(), "https://organic-shops.ru/");
+        Assert.assertEquals("https://organic-shops.ru/", driver.getCurrentUrl());
     }
 
     @Test
     public void getBrandListTest() {
         mainPage.getBrandList();
-        Assert.assertEquals(driver.getCurrentUrl(), "https://organic-shops.ru/");
+        Assert.assertEquals("https://organic-shops.ru/", driver.getCurrentUrl());
     }
 
     @Test
     public void searchLineTest() {
         mainPage.searchLine();
-        Assert.assertEquals(driver.getCurrentUrl(), "https://organic-shops.ru/");
+        Assert.assertEquals("https://organic-shops.ru/", driver.getCurrentUrl());
     }
 
     @Test
     public void goToNewsPageTest() {
         mainPage.goToNewsPage();
-        Assert.assertEquals(driver.getCurrentUrl(), "https://organic-shops.ru/novosti.html");
+        Assert.assertEquals("https://organic-shops.ru/novosti.html", driver.getCurrentUrl());
     }
 
     @Test
     public void goToShopsPageTest() {
         mainPage.goToShopsPage();
-        Assert.assertEquals(driver.getCurrentUrl(), "https://organic-shops.ru/spisok_magazinov.html");
+        Assert.assertEquals("https://organic-shops.ru/spisok_magazinov.html", driver.getCurrentUrl());
     }
 
     @Test
     public void goToCertificatesPageTest() {
         mainPage.goToCertificatesPage();
-        Assert.assertEquals(driver.getCurrentUrl(), "https://organic-shops.ru/sertifikaty.html");
+        Assert.assertEquals("https://organic-shops.ru/sertifikaty.html", driver.getCurrentUrl());
     }
 
     @Test
     public void goToAboutUsPageTest() {
         mainPage.goToAboutUsPage();
-        Assert.assertEquals(driver.getCurrentUrl(), "https://organic-shops.ru/o_nas.html");
+        Assert.assertEquals("https://organic-shops.ru/o_nas.html", driver.getCurrentUrl());
     }
 
     @Test
     public void goToDeliveryPageTest() {
         mainPage.goToDeliveryPage();
-        Assert.assertEquals(driver.getCurrentUrl(), "https://organic-shops.ru/delivery/");
+        Assert.assertEquals("https://organic-shops.ru/delivery/", driver.getCurrentUrl());
     }
 
     @Test
     public void goToPromotionsPageTest() {
         mainPage.goToPromotionsPage();
-        Assert.assertEquals(driver.getCurrentUrl(), "https://organic-shops.ru/products/result.html?favorite=Y");
+        Assert.assertEquals("https://organic-shops.ru/products/result.html?favorite=Y", driver.getCurrentUrl());
     }
 
     @Test
     public void goToNoveltiesPageTest() {
         mainPage.goToNoveltiesPage();
-        Assert.assertEquals( driver.getCurrentUrl(),
-                       "https://organic-shops.ru/products/result.html?new=Y&sort=id+DESC" );
+        Assert.assertEquals(
+                "https://organic-shops.ru/products/result.html?new=Y&sort=id+DESC",
+                        driver.getCurrentUrl());
     }
 
     @Test
     public void goToAuthorizationPageTest() {
         mainPage.goToAuthorizationPage();
-        Assert.assertEquals(driver.getCurrentUrl(), "https://organic-shops.ru/users/");
+        Assert.assertEquals("https://organic-shops.ru/users/", driver.getCurrentUrl());
     }
 
     @Test
     public void goToBasketPageTest() {
         mainPage.goToBasketPage();
-        Assert.assertEquals(driver.getCurrentUrl(), "https://organic-shops.ru/products/basket.html");
+        Assert.assertEquals("https://organic-shops.ru/products/basket.html", driver.getCurrentUrl());
     }
 
     @After
